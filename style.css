@@ -1,57 +1,87 @@
+html {
+    height: 100vh;
+}
 
 body {
-    height: 100vh;
+    font-family: 'Creepster', cursive;
+    background-image: url(images/portail.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: black;
     padding: 0;
     margin: 0;
-    background-image: url('asset/portail.png');
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: 50% 50%;
-    background-color: black;
-    font-family: 'Hanalei Fill', cursive;
+    height: 100%;
     text-shadow: 0.1em 0.1em 0.2em #4a9c46;
     overflow: hidden;
 }
 
 
-#text {
-    color: red;
-    position: relative;
-   
-      
-}
-
-#text h1 {
-   
-    font-size: 90px;
-    letter-spacing: 10px;
-    font-weight: 1000;
-    text-align: center;
-}
-
-#text h4 {
-    margin-top: -30px;
-    font-size: 30px;
-    letter-spacing: 3px;
-    text-align: center;
-}
-
-
-.portalgun {
-    width: auto;
+.all {
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-a {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 49vh;
-    width: 90px;
-    height: 90px;
+.all .text {
+   padding-top: 230px;
+   color: red;
 }
 
-.portalgun:hover {
+.all h1 {
+    font-size: 100px;
+    letter-spacing: 10px;
+}
+
+.all h3 {
+    margin-top: 200px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.btn .portalgun {
     width: auto;
-    height: 110px;
+    height: 20%;
+}
+
+
+@media only screen and (min-width:429px) and (max-width:811px) {
+    .all .text {
+        padding-top: 180px;
+     }
+     
+     .all h1 {
+         font-size: 150px;
+         letter-spacing: 10px;
+     }
+     
+     .all h3 {
+         margin-top: 320px;
+         font-size: 40px;
+         letter-spacing: 1px;
+     }
+}
+
+@media only screen and (min-width:811px) {
+    body {
+        background-size: 60%;
+    }
+
+    .all .text {
+        padding-top: 180px;
+     }
+     
+     .all h1 {
+         font-size: 150px;
+         letter-spacing: 10px;
+     }
+     
+     .all h3 {
+         margin-top: 320px;
+         font-size: 40px;
+         letter-spacing: 1px;
+     }
 }
